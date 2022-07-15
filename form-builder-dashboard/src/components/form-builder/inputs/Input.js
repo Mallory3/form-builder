@@ -2,10 +2,12 @@ import Label from "../shared/Label"
 
 
 const Input = ({
-  label="",
+  className,
+  label = "",
+  placeholder = "",
   name,
   onKeyUp,
-  required,
+  required = true,
   type
 }) => {
 
@@ -15,11 +17,16 @@ const Input = ({
   const email = (type === 'email')
   
   return (
-    <div>
-      <Label label={label} name={name} />
+    <div className={className}>
+      <Label 
+        label={label}
+        name={name}
+        required={required} 
+      />
       {text && //Text Input
           <input
           type={type}
+          placeholder={placeholder}
           name={name} //PDF input id
           onKeyUp={onKeyUp} //Updates hook state variable, formData
           required={required}
@@ -28,6 +35,7 @@ const Input = ({
       {tel && //Telephone Input
           <input
           type={type}
+          placeholder={placeholder}
           name={name} //PDF input id
           onKeyUp={onKeyUp} //Updates hook state variable, formData
           required={false}
@@ -36,6 +44,7 @@ const Input = ({
        {email && //Email Input
           <input
           type={type}
+          placeholder={placeholder}
           name={name} //PDF input id
           onKeyUp={onKeyUp} //Updates hook state variable, formData
           required={required}

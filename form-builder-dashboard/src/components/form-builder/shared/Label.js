@@ -1,4 +1,6 @@
-const Label = ({ label="", name }) => {
+import styles from "../../../styles/Form.module.scss"
+
+const Label = ({ label="", name, required=true }) => {
   //Accessibility
   const labelProvided = !!label
   if (!labelProvided) {
@@ -12,6 +14,9 @@ const Label = ({ label="", name }) => {
       hidden={!labelProvided}
     >
       {label}
+      {required && 
+        <span className={styles.required}>*</span>
+      }
     </label>
   )
 }

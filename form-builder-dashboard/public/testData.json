@@ -1,0 +1,72 @@
+{
+  "uuid":"34sr3d-asdnlor-ad422",
+  "template_id":"3456AB", 
+  "name":"Example Form",
+  "description":"This is an example form",
+  "submit":{
+      "method":"post",
+      "url":"https://submit.foo.com"
+  },
+  "status":"locked",
+  "stylesheets_url":"https://css.foo.com/foo.styles.css",
+  "pages":[
+    {
+      "heading":"Example Heading 1",
+      "fields": [
+        {
+          "label": "First Name",
+          "placeholder": "Enter your first name",
+          "type": "text",
+          "name": "first_name",
+          "value": "",
+          "tab_index": 1
+        },
+        {
+          "label": "Middle Name",
+          "placeholder": "Enter your middle name",
+          "type": "text",
+          "name": "middle_name",
+          "value": "",
+          "tab_index": 2
+        },
+        {
+          "label": "Last Name",
+          "placeholder": "Enter your last name",
+          "type": "text",
+          "name": "last_name",
+          "value": "",
+          "tab_index": 3
+        },
+        {
+          "label": "Address",
+          "placeholder": "Enter your address",
+          "type": "text",
+          "name": "address",
+          "value": "",
+          "tab_index": 4
+        }
+      ]
+    },
+    {
+      "heading":"Example Heading 2",
+      "fields": [
+        {
+          "label": "Phone Number",
+          "placeholder": "Enter your phone number",
+          "type": "tel",
+          "name": "phone_number",
+          "value": "",
+          "tab_index": 1
+        },
+        {
+          "label": "Email",
+          "placeholder": "Enter your email",
+          "type": "email",
+          "name": "email",
+          "value": "",
+          "tab_index": 2
+        }
+      ]
+    }
+  ]
+}

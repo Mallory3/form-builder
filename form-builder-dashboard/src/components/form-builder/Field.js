@@ -4,7 +4,7 @@ import Input from "./inputs/Input"
 
 const Field = (props) => {
   const {
-    type //Define specific props
+    type //Define specific props needed
   } = props
   
   //FORM FIELD TYPES
