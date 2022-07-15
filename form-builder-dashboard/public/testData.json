@@ -67,6 +67,27 @@
           "tab_index": 2
         }
       ]
+    },
+    {
+      "heading":"Example Heading 3",
+      "fields": [
+        {
+          "label": "Occupation",
+          "placeholder": "Enter your occupation",
+          "type": "text",
+          "name": "occupation",
+          "value": "",
+          "tab_index": 1
+        },
+        {
+          "label": "Role",
+          "placeholder": "Enter your role",
+          "type": "text",
+          "name": "text",
+          "value": "",
+          "tab_index": 2
+        }
+      ]
     }
   ]
 }
