@@ -5,17 +5,27 @@ form {
   max-width: 1200px;
   color: rgb(61, 61, 61);
 
+  .header {
+    background-color: rgba(191, 191, 191, 0.1);
+    border-radius: 4px;
+    margin-bottom: 2em;
+    margin-top: 0.3em;
+    padding: 8px;
+  }
+
   .title {
     margin-bottom: 0;
   }
 
   .description {
-    border-radius: 4px;
     font-weight: 500;
+    margin: 0;
+    margin: 0.5em;
   }
 
   .note {
-    margin-bottom: 2em;
+    font-size: 15px;
+    margin: 0.5em;
   }
 
   .required {
